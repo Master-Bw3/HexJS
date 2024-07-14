@@ -1,0 +1,27 @@
+# Changes here will be overwritten by Copier. NEVER EDIT MANUALLY
+# See: https://copier.readthedocs.io/en/stable/configuring/#the-copier-answersyml-file
+_commit: v0.1.11
+_src_path: gh:hexdoc-dev/hexdoc-hexcasting-template
+author: Master_Bw3
+book_id: hexjs:hexjsbook
+default_branch: main
+github_repo: hexjs
+gradle_mod_version_key: modVersion
+hexdoc_mod_plugin_classname: HexJsModPlugin
+hexdoc_plugin_classname: HexJsPlugin
+java_lang:
+    ext: java
+    src: java
+java_package: io/github/master_bw3/hexjs
+mod_display_name: HexJs
+modid: hexjs
+multiloader: true
+package_export_root: doc/src/hexdoc_hexjs/_export
+package_name: hexdoc-hexjs
+package_slug: hexdoc_hexjs
+package_src: doc/src/hexdoc_hexjs
+pages_url: https://master_bw3.github.io/hexjs
+pattern_regex:
+    per_world_value: 'true'
+    regex: make\(\s*"(?P<name>[a-zA-Z0-9_\/]+)",\s*(?:new )?(?:ActionRegistryEntry|OperationAction)\(\s*HexPattern\.fromAngles\(\s*"(?P<signature>[aqweds]+)",\s*HexDir.(?P<startdir>\w+)\)
+pattern_registry: registry/HexJsPatterns.java
