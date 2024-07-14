@@ -45,6 +45,7 @@ dependencies {
         // If not excluded here, calls a nonexistent method and crashes the dev client
         exclude(module = "phosphor")
     }
+
     // Hex Casting dependencies
     // we use modLocalRuntime to add these to the development runtime, but not at compile time or for consumers of this project
     modLocalRuntime(libs.paucal.fabric)
@@ -58,6 +59,9 @@ dependencies {
         implementation(it)
         include(it)
     }
+
+    modApi(libs.kubejs.fabric)
+    modApi(libs.rhino.fabric)
 
     modApi(libs.clothConfig.fabric) {
         exclude(group = "net.fabricmc.fabric-api")

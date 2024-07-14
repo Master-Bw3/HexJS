@@ -28,6 +28,14 @@ repositories {
     maven { url = uri("https://maven.terraformersmc.com/releases") }
     maven { url = uri("https://maven.theillusivec4.top") } // Caelus
     maven { url = uri("https://thedarkcolour.github.io/KotlinForForge") }
+    maven {
+        // saps.dev Maven (KubeJS and Rhino)
+        url = uri("https://maven.saps.dev/minecraft")
+        content {
+            includeGroup("dev.latvian.mods")
+        }
+    }
+
     exclusiveContent {
         filter {
             includeGroup("maven.modrinth")

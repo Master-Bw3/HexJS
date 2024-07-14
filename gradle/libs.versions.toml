@@ -36,6 +36,9 @@ patchouli-forge  = "1.20.1-84-FORGE"
 
 trinkets = "3.7.0"
 
+kubejs = "2001.6.3-build.73"
+rhino = "2001.2.2-build.11"
+
 cardinalComponents = "5.2.1"
 serializationHooks = "0.4.99999"
 mixinExtras        = "0.1.1"
@@ -83,6 +86,14 @@ patchouli-fabric = { module="vazkii.patchouli:Patchouli", version.ref="patchouli
 patchouli-forge  = { module="vazkii.patchouli:Patchouli", version.ref="patchouli-forge" }
 
 trinkets = { module="dev.emi:trinkets", version.ref="trinkets" }
+
+kubejs-common = { module="dev.latvian.mods:kubejs-common", version.ref="kubejs" }
+kubejs-fabric = { module="dev.latvian.mods:kubejs-fabric", version.ref="kubejs" }
+kubejs-forge  = { module="dev.latvian.mods:kubejs-forge", version.ref="kubejs" }
+
+rhino-common = { module="dev.latvian.mods:rhino-common", version.ref="rhino" }
+rhino-fabric = { module="dev.latvian.mods:rhino-fabric", version.ref="rhino" }
+rhino-forge  = { module="dev.latvian.mods:rhino-forge", version.ref="rhino" }
 
 cardinalComponents = { module="dev.onyxstudios.cardinal-components-api:cardinal-components-api", version.ref="cardinalComponents" }
 mixinExtras        = { module="com.github.LlamaLad7:MixinExtras", version.ref="mixinExtras" }

@@ -64,6 +64,9 @@ dependencies {
     modLocalRuntime(libs.patchouli.forge)
     modLocalRuntime(libs.caelus)
 
+    modApi(libs.kubejs.forge)
+    modApi(libs.rhino.forge)
+
     modApi(libs.clothConfig.forge)
 
     libs.mixinExtras.also {

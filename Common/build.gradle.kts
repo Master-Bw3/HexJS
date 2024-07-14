@@ -16,6 +16,9 @@ dependencies {
 
     modApi(libs.hexcasting.fabric)
 
+    modApi(libs.kubejs.fabric)
+    modApi(libs.rhino.fabric)
+
     modApi(libs.clothConfig.fabric)
 
     implementation(libs.mixinExtras)
