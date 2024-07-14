@@ -2,6 +2,8 @@
 
 package hexjs
 
+import kotlin.io.path.div
+
 plugins {
     id("hexjs.kotlin")
     id("hexjs.utils.json5")
@@ -23,7 +25,7 @@ loom {
 dependencies {
     minecraft(libs.minecraft)
 
-    mappings(libs.yarn)
+    mappings(variantOf(libs.yarn) { classifier("v2") })
 
     annotationProcessor(libs.bundles.asm)
 }

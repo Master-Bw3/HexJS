@@ -44,14 +44,6 @@ dependencies {
     "shadowCommon"(project(":Common", "transformProduction$platformCapitalized")) { isTransitive = false }
 }
 
-sourceSets {
-    main {
-        resources {
-            source(project(":Common").sourceSets.main.get().resources)
-        }
-    }
-}
-
 tasks {
     shadowJar {
         exclude("architectury.common.json")
@@ -116,7 +108,7 @@ publishMods {
     }
 }
 
-const val SECTION_HEADER_PREFIX = "## "
+val SECTION_HEADER_PREFIX = "## "
 
 fun getLatestChangelog() = rootProject.file("CHANGELOG.md").useLines { lines ->
     lines.dropWhile { !it.startsWith(SECTION_HEADER_PREFIX) }
