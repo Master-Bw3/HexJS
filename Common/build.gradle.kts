@@ -14,9 +14,9 @@ dependencies {
     modImplementation(libs.fabric.loader)
     modApi(libs.architectury)
 
-    modApi(libs.hexcasting.common)
+    modApi(libs.hexcasting.fabric)
 
-    modApi(libs.clothConfig.common)
+    modApi(libs.clothConfig.fabric)
 
     implementation(libs.mixinExtras)
 }
